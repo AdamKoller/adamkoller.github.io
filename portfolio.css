@@ -8,6 +8,59 @@ html {
   font-family: 'Nunito', sans-serif;
   height: 100%;
 }
+/* HAMBURGER ICON */
+.portfolio .menu-icon {
+  position: fixed;
+  right:0;
+  top:34px;
+  right:34px;
+  padding: 20px;
+  z-index: 11;
+}
+.portfolio .menu-icon .fas{
+  color:black;
+  font-size: 50px;
+}
+/* MENU */
+#menu {
+  background: #02CCBA;
+  position: fixed;
+  width: 100%;
+  top:0;
+  bottom:0;
+  transform: translate3d(-100%,0,0);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition:all .5s ease-in-out;
+}
+#menu nav {
+  width: 400px;
+  text-align: center;
+}
+#menu nav a {
+  display: block;
+  font-size: 70px;
+  padding:30px;
+  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+  color:#E1F9F7;
+}
+#menu nav a:hover {
+  color:#A4B5B4;
+}
+/* HAMBURGER ACTIVE MENU */
+.menu-active .menu-icon .fas{
+  color:#E1F9F7;
+}
+.menu-active #menu {
+  width: 100%;
+  top:0;
+  bottom:0;
+  transform: translate3d(0,0,0);
+}
 /* INFO SECTION */
 .portfolio .info-section {
   width:35%;
@@ -420,8 +473,13 @@ html {
     width: 210px;
   }
   .portfolio .content-area .work-section .work-box-1 .overlay,
-  .portfolio .content-area .work-section .work-box-2 .overlay,
-  .portfolio .content-area .work-section .work-box-3 .overlay {
+  .work-box-2 .overlay,
+  .work-box-3 .overlay {
+    display: none;
+  }
+  .portfolio .content-area .work-section .work-box-1 .overlay .project-info,
+  .work-box-2 .overlay .project-info,
+  .work-box-3 .overlay .project-info{
     display: none;
   }
   .portfolio .content-area .scroll-section .work-section .work-box-1 img{
@@ -528,11 +586,6 @@ html {
     max-width: 2000px;
     margin-left: 28px;
     width: 210px;
-  }
-  .portfolio .content-area .work-section .work-box-1 .overlay,
-  .work-box-2 .overlay,
-  .work-box-3 .overlay {
-    display: none;
   }
   .portfolio .content-area .work-section .work-box-1 .overlay .project-info,
   .work-box-2 .overlay .project-info,
@@ -644,11 +697,6 @@ html {
     margin-left: 50px;
     width: 210px;
   }
-  .portfolio .content-area .work-section .work-box-1 .overlay,
-  .work-box-2 .overlay,
-  .work-box-3 .overlay {
-    display: none;
-  }
   .portfolio .content-area .work-section .work-box-1 .overlay .project-info,
   .work-box-2 .overlay .project-info,
   .work-box-3 .overlay .project-info{
@@ -694,5 +742,1081 @@ html {
     font-size: 22px;
     margin-top: -154px;
     width: 185%;
+  }
+}
+@media (min-width:1599px) and (max-width:1600px) {
+  * {
+    box-sizing: border-box;
+  }
+  body,
+  html {
+    background: #02CCBA;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    height: 100%;
+  }
+  /* INFO SECTION */
+  .portfolio .info-section {
+    width:35%;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    padding: 54px;
+  }
+  .portfolio .info-section .logo {
+    font-size: 120px;
+    margin-top: -5px;
+   margin-left: -5px;
+  }
+  .portfolio .info-section .logo img {
+    width:  110px;
+    height: 100px;
+  }
+  .portfolio .info-section .info-box {
+    bottom: 30px;
+    position: absolute;
+  }
+  .portfolio .info-section .info-box h4 {
+    font-size: 28px;
+    color:white;
+    margin: 0.7rem 0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: normal;
+  }
+  .portfolio .info-section .info-box p {
+    font-size: 30px;
+    font-weight: lighter;
+    font-style: italic;
+    color:#E1F9F7;
+    margin-bottom: 40px;
+    font-family: 'Nunito', sans-serif;
+  }
+  .portfolio .info-section .info-box .icon-section {
+    display: block;
+    font-size: 40px;
+    color:white;
+  }
+  .portfolio .info-section .info-box .icon-section a {
+    color:white;
+    padding-right: 20px;
+  }
+  .portfolio .info-section .info-box .icon-section a .linkedin:hover{
+    color:#2852B8;
+  }
+  .portfolio .info-section .info-box .icon-section a .github:hover {
+    color:black;
+  }
+
+
+  /* 1st way */
+   .portfolio .content-area {
+    margin-left: 20%;
+    background: white;
+    width: 80%;
+    min-width: 300px;
+    height: 100%;
+    font-family: 'Nunito', sans-serif;
+    overflow: hidden;
+  }
+  .portfolio .content-area .scroll-section {
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 54px;
+  }
+  .portfolio .content-area h1 {
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .portfolio .content-area h1 .projects {
+    color:#02CCBA;
+  }
+  .portfolio .content-area h5 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: -140px;
+    text-align: center;
+    margin-top: 160px;
+    margin-left: -30px;
+  }
+  .portfolio .content-area p {
+    text-indent: 50px;
+    font-weight: 300;
+    font-size: 30px;
+    margin-bottom: 10px;
+    line-height: 1.8;
+  }
+  .portfolio .content-area .work-section {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 2000px;
+    margin-left: 68px;
+  }
+  /* work-box-1 */
+  .portfolio .content-area .work-section .work-box-1 {
+    position: relative;
+  }
+  .portfolio .content-area .work-section .work-box-1 .resize {
+    display: block;
+    width: 400px;
+    height: 400px;
+    margin-left: 20px;
+  }
+  .portfolio .content-area .work-section .work-box-1 .overlay {
+    position: absolute;
+      bottom: 0px;
+      left: 20px;
+      right: 0;
+      background-color: grey;
+      overflow: hidden;
+      width: 0px;
+      height: 400px;
+      transition: .6s ease;
+  }
+  .portfolio .content-area .work-section .work-box-1:hover .overlay {
+    width: 400px;
+    opacity: .9;
+    height:400px;
+    background: #02CCBA;
+  }
+  .portfolio .content-area .work-section .work-box-1 .text {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+  }
+  .portfolio .content-area .work-section .work-box-1 .project-tech {
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+  }
+  .portfolio .content-area .work-section .work-box-1 .project-link {
+    background: #FF5F5E;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+  }
+  .portfolio .content-area .work-section .work-box-1 .project-link:hover {
+    cursor:pointer;
+    background:darkgrey;
+  }
+  /* work-box-2 */
+  .portfolio .content-area .work-section .work-box-2 {
+    position: relative;
+    margin-left: -70px;
+  }
+  .portfolio .content-area .work-section .work-box-2 .resize {
+    display: block;
+    width: 400px;
+    height: 400px;
+    margin-left: 140px;
+  }
+  .portfolio .content-area .work-section .work-box-2 .overlay {
+    position: absolute;
+      bottom: 0px;
+      left: 140px;
+      right: 0;
+      background-color: grey;
+      overflow: hidden;
+      width: 0px;
+      height: 400px;
+      transition: .6s ease;
+  }
+  .portfolio .content-area .work-section .work-box-2:hover .overlay {
+    width: 400px;
+    opacity: .9;
+    height:400px;
+    background: #02CCBA;
+  }
+  .portfolio .content-area .work-section .work-box-2 .text {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+  }
+  .portfolio .content-area .work-section .work-box-2 .project-tech {
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+  }
+  .portfolio .content-area .work-section .work-box-2 .project-link {
+    background: #FF5F5E;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+  }
+  .portfolio .content-area .work-section .work-box-2 .project-link:hover {
+    cursor:pointer;
+    background:darkgrey;
+  }
+  /* work-box-3 */
+  .portfolio .content-area .work-section .work-box-3 {
+    position: relative;
+    margin-left: -70px;
+  }
+  .portfolio .content-area .work-section .work-box-3 .resize {
+    display: block;
+    width: 400px;
+    height: 400px;
+    margin-left: 90px;
+    margin-top: 70px;
+  }
+  .portfolio .content-area .work-section .work-box-3 .overlay {
+    position: absolute;
+      bottom: 0px;
+      left: 90px;
+      right: 0;
+      background-color: grey;
+      overflow: hidden;
+      width: 0px;
+      height: 400px;
+      transition: .6s ease;
+  }
+  .portfolio .content-area .work-section .work-box-3:hover .overlay {
+    width: 400px;
+    opacity: .9;
+    height:400px;
+    background: #02CCBA;
+  }
+  .portfolio .content-area .work-section .work-box-3 .text {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+  }
+  .portfolio .content-area .work-section .work-box-3 .project-tech {
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+  }
+  .portfolio .content-area .work-section .work-box-3 .project-link {
+    background: #FF5F5E;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+  }
+  .portfolio .content-area .work-section .work-box-3 .project-link:hover {
+    cursor:pointer;
+    background:darkgrey;
+  }
+  .portfolio .content-area .work-section .work-box-4 p {
+    text-align: center;
+    padding: 150px;
+    font-weight: lighter;
+    font-size: 20px;
+    font-style: italic;
+    width: 529px;
+    margin-left: -28px;
+  }
+}
+@media (min-width:1679px) and (max-width:1681px) {
+  * {
+    box-sizing: border-box;
+  }
+  body,
+  html {
+    background: #02CCBA;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    height: 100%;
+  }
+  /* INFO SECTION */
+  .portfolio .info-section {
+    width:35%;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    padding: 54px;
+  }
+  .portfolio .info-section .logo {
+    font-size: 120px;
+    margin-top: -5px;
+   margin-left: -5px;
+  }
+  .portfolio .info-section .logo img {
+    width:  110px;
+    height: 100px;
+  }
+  .portfolio .info-section .info-box {
+    bottom: 30px;
+    position: absolute;
+  }
+  .portfolio .info-section .info-box h4 {
+    font-size: 28px;
+    color:white;
+    margin: 0.7rem 0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: normal;
+  }
+  .portfolio .info-section .info-box p {
+    font-size: 30px;
+    font-weight: lighter;
+    font-style: italic;
+    color:#E1F9F7;
+    margin-bottom: 40px;
+    font-family: 'Nunito', sans-serif;
+  }
+  .portfolio .info-section .info-box .icon-section {
+    display: block;
+    font-size: 40px;
+    color:white;
+  }
+  .portfolio .info-section .info-box .icon-section a {
+    color:white;
+    padding-right: 20px;
+  }
+  .portfolio .info-section .info-box .icon-section a .linkedin:hover{
+    color:#2852B8;
+  }
+  .portfolio .info-section .info-box .icon-section a .github:hover {
+    color:black;
+  }
+
+
+  /* 1st way */
+   .portfolio .content-area {
+    margin-left: 20%;
+    background: white;
+    width: 80%;
+    min-width: 300px;
+    height: 100%;
+    font-family: 'Nunito', sans-serif;
+    overflow: hidden;
+  }
+  .portfolio .content-area .scroll-section {
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 54px;
+  }
+  .portfolio .content-area h1 {
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .portfolio .content-area h1 .projects {
+    color:#02CCBA;
+  }
+  .portfolio .content-area h5 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: -140px;
+    text-align: center;
+    margin-top: 160px;
+    margin-left: -70px;
+  }
+  .portfolio .content-area p {
+    text-indent: 50px;
+    font-weight: 300;
+    font-size: 30px;
+    margin-bottom: 10px;
+    line-height: 1.8;
+  }
+  .portfolio .content-area .work-section {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 2000px;
+    margin-left: 94px;
+  }
+  /* work-box-1 */
+  .portfolio .content-area .work-section .work-box-1 {
+    position: relative;
+  }
+  .portfolio .content-area .work-section .work-box-1 .resize {
+    display: block;
+    width: 400px;
+    height: 400px;
+    margin-left: 20px;
+  }
+  .portfolio .content-area .work-section .work-box-1 .overlay {
+    position: absolute;
+      bottom: 0px;
+      left: 20px;
+      right: 0;
+      background-color: grey;
+      overflow: hidden;
+      width: 0px;
+      height: 400px;
+      transition: .6s ease;
+  }
+  .portfolio .content-area .work-section .work-box-1:hover .overlay {
+    width: 400px;
+    opacity: .9;
+    height:400px;
+    background: #02CCBA;
+  }
+  .portfolio .content-area .work-section .work-box-1 .text {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+  }
+  .portfolio .content-area .work-section .work-box-1 .project-tech {
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+  }
+  .portfolio .content-area .work-section .work-box-1 .project-link {
+    background: #FF5F5E;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+  }
+  .portfolio .content-area .work-section .work-box-1 .project-link:hover {
+    cursor:pointer;
+    background:darkgrey;
+  }
+  /* work-box-2 */
+  .portfolio .content-area .work-section .work-box-2 {
+    position: relative;
+    margin-left: -70px;
+  }
+  .portfolio .content-area .work-section .work-box-2 .resize {
+    display: block;
+    width: 400px;
+    height: 400px;
+    margin-left: 140px;
+  }
+  .portfolio .content-area .work-section .work-box-2 .overlay {
+    position: absolute;
+      bottom: 0px;
+      left: 140px;
+      right: 0;
+      background-color: grey;
+      overflow: hidden;
+      width: 0px;
+      height: 400px;
+      transition: .6s ease;
+  }
+  .portfolio .content-area .work-section .work-box-2:hover .overlay {
+    width: 400px;
+    opacity: .9;
+    height:400px;
+    background: #02CCBA;
+  }
+  .portfolio .content-area .work-section .work-box-2 .text {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+  }
+  .portfolio .content-area .work-section .work-box-2 .project-tech {
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+  }
+  .portfolio .content-area .work-section .work-box-2 .project-link {
+    background: #FF5F5E;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+  }
+  .portfolio .content-area .work-section .work-box-2 .project-link:hover {
+    cursor:pointer;
+    background:darkgrey;
+  }
+  /* work-box-3 */
+  .portfolio .content-area .work-section .work-box-3 {
+    position: relative;
+    margin-left: -70px;
+  }
+  .portfolio .content-area .work-section .work-box-3 .resize {
+    display: block;
+    width: 400px;
+    height: 400px;
+    margin-left: 90px;
+    margin-top: 70px;
+  }
+  .portfolio .content-area .work-section .work-box-3 .overlay {
+    position: absolute;
+      bottom: 0px;
+      left: 90px;
+      right: 0;
+      background-color: grey;
+      overflow: hidden;
+      width: 0px;
+      height: 400px;
+      transition: .6s ease;
+  }
+  .portfolio .content-area .work-section .work-box-3:hover .overlay {
+    width: 400px;
+    opacity: .9;
+    height:400px;
+    background: #02CCBA;
+  }
+  .portfolio .content-area .work-section .work-box-3 .text {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+  }
+  .portfolio .content-area .work-section .work-box-3 .project-tech {
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+  }
+  .portfolio .content-area .work-section .work-box-3 .project-link {
+    background: #FF5F5E;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+  }
+  .portfolio .content-area .work-section .work-box-3 .project-link:hover {
+    cursor:pointer;
+    background:darkgrey;
+  }
+  .portfolio .content-area .work-section .work-box-4 p {
+    text-align: center;
+    padding: 150px;
+    font-weight: lighter;
+    font-size: 20px;
+    font-style: italic;
+    width: 529px;
+    margin-left: -38px;
+  }
+}
+@media (min-width:1919px) and (max-width:1921px) {
+  * {
+    box-sizing: border-box;
+  }
+  body,
+  html {
+    background: #02CCBA;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    height: 100%;
+  }
+  .portfolio .info-section {
+    width:35%;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    padding: 54px;
+  }
+  .portfolio .info-section .logo {
+    font-size: 120px;
+    margin-top: -5px;
+   margin-left: -5px;
+  }
+  .portfolio .info-section .logo img {
+    width:  110px;
+    height: 100px;
+  }
+  .portfolio .info-section .info-box {
+    bottom: 30px;
+    position: absolute;
+  }
+  .portfolio .info-section .info-box h4 {
+    font-size: 28px;
+    color:white;
+    margin: 0.7rem 0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: normal;
+  }
+  .portfolio .info-section .info-box p {
+    font-size: 30px;
+    font-weight: lighter;
+    font-style: italic;
+    color:#E1F9F7;
+    margin-bottom: 40px;
+    font-family: 'Nunito', sans-serif;
+  }
+  .portfolio .info-section .info-box .icon-section {
+    display: block;
+    font-size: 40px;
+    color:white;
+  }
+  .portfolio .info-section .info-box .icon-section a {
+    color:white;
+    padding-right: 20px;
+  }
+  .portfolio .info-section .info-box .icon-section a .linkedin:hover{
+    color:#2852B8;
+  }
+  .portfolio .info-section .info-box .icon-section a .github:hover {
+    color:black;
+  }
+
+
+  /* 1st way */
+   .portfolio .content-area {
+    margin-left: 20%;
+    background: white;
+    width: 80%;
+    min-width: 300px;
+    height: 100%;
+    font-family: 'Nunito', sans-serif;
+    overflow: hidden;
+  }
+  .portfolio .content-area .scroll-section {
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 54px;
+  }
+  .portfolio .content-area h1 {
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .portfolio .content-area h1 .projects {
+    color:#02CCBA;
+  }
+  .portfolio .content-area h5 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: -140px;
+    text-align: center;
+    margin-top: 160px;
+    margin-left: -70px;
+  }
+  .portfolio .content-area p {
+    text-indent: 50px;
+    font-weight: 300;
+    font-size: 30px;
+    margin-bottom: 10px;
+    line-height: 1.8;
+  }
+  .portfolio .content-area .work-section {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 2000px;
+    margin-left: 152px;
+  }
+  /* work-box-1 */
+  .portfolio .content-area .work-section .work-box-1 {
+    position: relative;
+  }
+  .portfolio .content-area .work-section .work-box-1 .resize {
+    display: block;
+    width: 400px;
+    height: 400px;
+    margin-left: 20px;
+  }
+  .portfolio .content-area .work-section .work-box-1 .overlay {
+    position: absolute;
+      bottom: 0px;
+      left: 20px;
+      right: 0;
+      background-color: grey;
+      overflow: hidden;
+      width: 0px;
+      height: 400px;
+      transition: .6s ease;
+  }
+  .portfolio .content-area .work-section .work-box-1:hover .overlay {
+    width: 400px;
+    opacity: .9;
+    height:400px;
+    background: #02CCBA;
+  }
+  .portfolio .content-area .work-section .work-box-1 .text {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+  }
+  .portfolio .content-area .work-section .work-box-1 .project-tech {
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+  }
+  .portfolio .content-area .work-section .work-box-1 .project-link {
+    background: #FF5F5E;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+  }
+  .portfolio .content-area .work-section .work-box-1 .project-link:hover {
+    cursor:pointer;
+    background:darkgrey;
+  }
+  /* work-box-2 */
+  .portfolio .content-area .work-section .work-box-2 {
+    position: relative;
+    margin-left: -70px;
+  }
+  .portfolio .content-area .work-section .work-box-2 .resize {
+    display: block;
+    width: 400px;
+    height: 400px;
+    margin-left: 140px;
+  }
+  .portfolio .content-area .work-section .work-box-2 .overlay {
+    position: absolute;
+      bottom: 0px;
+      left: 140px;
+      right: 0;
+      background-color: grey;
+      overflow: hidden;
+      width: 0px;
+      height: 400px;
+      transition: .6s ease;
+  }
+  .portfolio .content-area .work-section .work-box-2:hover .overlay {
+    width: 400px;
+    opacity: .9;
+    height:400px;
+    background: #02CCBA;
+  }
+  .portfolio .content-area .work-section .work-box-2 .text {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+  }
+  .portfolio .content-area .work-section .work-box-2 .project-tech {
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+  }
+  .portfolio .content-area .work-section .work-box-2 .project-link {
+    background: #FF5F5E;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+  }
+  .portfolio .content-area .work-section .work-box-2 .project-link:hover {
+    cursor:pointer;
+    background:darkgrey;
+  }
+  /* work-box-3 */
+  .portfolio .content-area .work-section .work-box-3 {
+    position: relative;
+    margin-left: -70px;
+  }
+  .portfolio .content-area .work-section .work-box-3 .resize {
+    display: block;
+    width: 400px;
+    height: 400px;
+    margin-left: 90px;
+    margin-top: 70px;
+  }
+  .portfolio .content-area .work-section .work-box-3 .overlay {
+    position: absolute;
+      bottom: 0px;
+      left: 90px;
+      right: 0;
+      background-color: grey;
+      overflow: hidden;
+      width: 0px;
+      height: 400px;
+      transition: .6s ease;
+  }
+  .portfolio .content-area .work-section .work-box-3:hover .overlay {
+    width: 400px;
+    opacity: .9;
+    height:400px;
+    background: #02CCBA;
+  }
+  .portfolio .content-area .work-section .work-box-3 .text {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+  }
+  .portfolio .content-area .work-section .work-box-3 .project-tech {
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+  }
+  .portfolio .content-area .work-section .work-box-3 .project-link {
+    background: #FF5F5E;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+  }
+  .portfolio .content-area .work-section .work-box-3 .project-link:hover {
+    cursor:pointer;
+    background:darkgrey;
+  }
+  .portfolio .content-area .work-section .work-box-4 p {
+    text-align: center;
+    padding: 150px;
+    font-weight: lighter;
+    font-size: 20px;
+    font-style: italic;
+    width: 529px;
+    margin-left: -8px;
   }
 }

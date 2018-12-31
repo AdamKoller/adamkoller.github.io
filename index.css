@@ -1,4 +1,4 @@
- * {
+* {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
@@ -245,7 +245,7 @@ html {
   margin-left: 0px;
   width: 100%;
   margin-top: -3px;
-  height: 875px;
+  height: 715px;
  }
  .home .content-area .img-container {
    padding: 56px 20px 0;
@@ -371,9 +371,9 @@ html {
   }
  .home .content-area {
   margin-left: 0px;
-  width: 100%;
+  width: 101%;
   margin-top: -3px;
-  height: 875px;
+  height: 720px;
  }
  .home .content-area .img-container {
    padding: 56px 20px 0;
@@ -501,7 +501,7 @@ html {
   margin-left: 0px;
   width: 100%;
   margin-top: -3px;
-  height: 875px;
+  height: 723px;
  }
  .home .content-area .img-container {
    padding: 56px 20px 0;

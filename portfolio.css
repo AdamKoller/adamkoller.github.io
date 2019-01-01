@@ -8,59 +8,6 @@ html {
   font-family: 'Nunito', sans-serif;
   height: 100%;
 }
-/* HAMBURGER ICON */
-.portfolio .menu-icon {
-  position: fixed;
-  right:0;
-  top:34px;
-  right:34px;
-  padding: 20px;
-  z-index: 11;
-}
-.portfolio .menu-icon .fas{
-  color:black;
-  font-size: 50px;
-}
-/* MENU */
-#menu {
-  background: #02CCBA;
-  position: fixed;
-  width: 100%;
-  top:0;
-  bottom:0;
-  transform: translate3d(-100%,0,0);
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 1;
-  transition:all .5s ease-in-out;
-}
-#menu nav {
-  width: 400px;
-  text-align: center;
-}
-#menu nav a {
-  display: block;
-  font-size: 70px;
-  padding:30px;
-  text-decoration: none;
-  font-family: 'Nunito', sans-serif;
-  color:#E1F9F7;
-}
-#menu nav a:hover {
-  color:#A4B5B4;
-}
-/* HAMBURGER ACTIVE MENU */
-.menu-active .menu-icon .fas{
-  color:#E1F9F7;
-}
-.menu-active #menu {
-  width: 100%;
-  top:0;
-  bottom:0;
-  transform: translate3d(0,0,0);
-}
 /* INFO SECTION */
 .portfolio .info-section {
   width:35%;
@@ -115,7 +62,7 @@ html {
 }
 
 
-/* 1st way */
+/* CONTENT AREA */
  .portfolio .content-area {
   margin-left: 20%;
   background: white;
@@ -456,7 +403,7 @@ html {
     margin-left: 0px;
     width: 100%;
     margin-top: -3px;
-    height: 646px;
+    height: 100%;
   }
   .portfolio .content-area .scroll-section .title h1 {
     font-size: 30px;
@@ -472,15 +419,76 @@ html {
     margin-left: 20px;
     width: 210px;
   }
-  .portfolio .content-area .work-section .work-box-1 .overlay,
-  .work-box-2 .overlay,
-  .work-box-3 .overlay {
-    display: none;
+      /* WORK BOX-1 */
+  .portfolio .content-area .work-section .work-box-1 .overlay {
+    position: absolute;
+      bottom: 1px;
+      left: -31px;
+      right: 0;
+      background-color: grey;
+      overflow: hidden;
+      width: 0px;
+      height: 211px;
+      transition: .6s ease;
   }
-  .portfolio .content-area .work-section .work-box-1 .overlay .project-info,
-  .work-box-2 .overlay .project-info,
-  .work-box-3 .overlay .project-info{
-    display: none;
+  .portfolio .content-area .work-section .work-box-1:hover .overlay {
+    width: 274px;
+    opacity: .9;
+    height:211px;
+    background: #02CCBA;
+  }
+  .portfolio .content-area .work-section .work-box-1 .text {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 11%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+  }
+  .portfolio .content-area .work-section .work-box-1 .project-tech {
+    color: white;
+    font-size: 22px;
+    font-style: italic;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 18px;
+  }
+  .portfolio .content-area .work-section .work-box-1 .project-link {
+    background: #FF5F5E;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    margin-top: 50px;
+  }
+  .portfolio .content-area .work-section .work-box-1 .project-link:hover {
+    cursor:pointer;
+    background:darkgrey;
   }
   .portfolio .content-area .scroll-section .work-section .work-box-1 img{
     width: 274px;
@@ -490,6 +498,82 @@ html {
     margin-bottom: 50px;
     border:1px solid lightgrey;
   }
+      /* WORK BOX-2  */
+  .portfolio .content-area .work-section .work-box-2 .overlay {
+    position: absolute;
+    bottom: 1px;
+    left: 39px;
+    right: 0;
+    background-color: grey;
+    overflow: hidden;
+    width: 0px;
+    height: 211px;
+    transition: .6s ease;
+  }
+  .portfolio .content-area .work-section .work-box-2:hover .overlay {
+    width: 274px;
+    opacity: .9;
+    height:211px;
+    background: #02CCBA;
+  }
+  .portfolio .content-area .work-section .work-box-2 .text {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+  }
+  .portfolio .content-area .work-section .work-box-2 .text .website {
+    width:50px;
+    display: block;
+    margin-left: 38px;
+  }
+  .portfolio .content-area .work-section .work-box-2 .project-tech {
+    color: white;
+    font-size: 22px;
+    font-style: italic;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 18px;
+  }
+  .portfolio .content-area .work-section .work-box-2 .project-link {
+    background: #FF5F5E;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    margin-top: 50px;
+  }
+  .portfolio .content-area .work-section .work-box-2 .project-link:hover {
+    cursor:pointer;
+    background:darkgrey;
+  }
   .portfolio .content-area .scroll-section .work-section .work-box-2 img{
     width: 274px;
     margin-left: 39px;
@@ -498,6 +582,77 @@ html {
     margin-bottom: 50px;
     border:1px solid lightgrey;
   }
+      /* WORK BOX-3 */
+      .portfolio .content-area .work-section .work-box-3 .overlay {
+        position: absolute;
+        bottom: 1px;
+        left: 39px;
+        right: 0;
+        background-color: grey;
+        overflow: hidden;
+        width: 0px;
+        height: 211px;
+        transition: .6s ease;
+      }
+      .portfolio .content-area .work-section .work-box-3:hover .overlay {
+        width: 274px;
+        opacity: .9;
+        height:211px;
+        background: #02CCBA;
+      }
+      .portfolio .content-area .work-section .work-box-3 .text {
+        color: white;
+        font-size: 40px;
+        position: absolute;
+        top: 11%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+        font-family: 'Nunito', sans-serif;
+      }
+      .portfolio .content-area .work-section .work-box-3 .project-tech {
+        color: white;
+        font-size: 22px;
+        font-style: italic;
+        position: absolute;
+        top: 22%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+        font-family: 'Nunito', sans-serif;
+        margin-top: 18px;
+      }
+      .portfolio .content-area .work-section .work-box-3 .project-link {
+        background: #FF5F5E;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        border-radius: 25px;
+        text-align: center;
+        padding: 20px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #ffffff;
+        text-decoration: none;
+        display: inline-block;
+        position: absolute;
+        top: 56%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+        font-family: 'Nunito', sans-serif;
+        font-size: 30px;
+        margin-top: 50px;
+      }
+      .portfolio .content-area .work-section .work-box-3 .project-link:hover {
+        cursor:pointer;
+        background:darkgrey;
+      }
   .portfolio .content-area .scroll-section .work-section .work-box-3 img{
     width: 274px;
     margin-left: 39px;
@@ -524,7 +679,7 @@ html {
     width: 185%;
   }
 }
-@media (min-width:370px) and (max-width:375px) {
+@media (min-width:370px) and (max-width:380px) {
   * {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -571,7 +726,7 @@ html {
     margin-left: 0px;
     width: 100%;
     margin-top: -3px;
-    height: 646px;
+    height: 100%;
   }
   .portfolio .content-area .scroll-section .title h1 {
     font-size: 30px;
@@ -587,31 +742,239 @@ html {
     margin-left: 28px;
     width: 210px;
   }
-  .portfolio .content-area .work-section .work-box-1 .overlay,
-  .work-box-2 .overlay,
-  .work-box-3 .overlay {
-    display: none;
+  /* WORK BOX-1 */
+.portfolio .content-area .work-section .work-box-1 .overlay {
+position: absolute;
+  bottom: 1px;
+  left: -31px;
+  right: 0;
+  background-color: grey;
+  overflow: hidden;
+  width: 0px;
+  height: 211px;
+  transition: .6s ease;
+}
+.portfolio .content-area .work-section .work-box-1:hover .overlay {
+width: 274px;
+opacity: .9;
+height:211px;
+background: #02CCBA;
+}
+.portfolio .content-area .work-section .work-box-1 .text {
+color: white;
+font-size: 40px;
+position: absolute;
+top: 11%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+white-space: nowrap;
+font-family: 'Nunito', sans-serif;
+}
+.portfolio .content-area .work-section .work-box-1 .project-tech {
+color: white;
+font-size: 22px;
+font-style: italic;
+position: absolute;
+top: 20%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+white-space: nowrap;
+font-family: 'Nunito', sans-serif;
+margin-top: 18px;
+}
+.portfolio .content-area .work-section .work-box-1 .project-link {
+background: #FF5F5E;
+-webkit-border-radius: 25px;
+-moz-border-radius: 25px;
+border-radius: 25px;
+text-align: center;
+padding: 20px;
+letter-spacing: 3px;
+text-transform: uppercase;
+color: #ffffff;
+text-decoration: none;
+display: inline-block;
+position: absolute;
+top: 56%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+white-space: nowrap;
+font-family: 'Nunito', sans-serif;
+font-size: 30px;
+margin-top: 50px;
+}
+.portfolio .content-area .work-section .work-box-1 .project-link:hover {
+cursor:pointer;
+background:darkgrey;
+}
+.portfolio .content-area .scroll-section .work-section .work-box-1 img{
+width: 274px;
+margin-left: -31px;
+margin-top: -60px;
+height: 212px;
+margin-bottom: 50px;
+border:1px solid lightgrey;
+}
+  /* WORK BOX-2  */
+.portfolio .content-area .work-section .work-box-2 .overlay {
+position: absolute;
+bottom: 1px;
+left: 39px;
+right: 0;
+background-color: grey;
+overflow: hidden;
+width: 0px;
+height: 211px;
+transition: .6s ease;
+}
+.portfolio .content-area .work-section .work-box-2:hover .overlay {
+width: 274px;
+opacity: .9;
+height:211px;
+background: #02CCBA;
+}
+.portfolio .content-area .work-section .work-box-2 .text {
+color: white;
+font-size: 40px;
+position: absolute;
+top: 20%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+white-space: nowrap;
+font-family: 'Nunito', sans-serif;
+}
+.portfolio .content-area .work-section .work-box-2 .text .website {
+width:50px;
+display: block;
+margin-left: 38px;
+}
+.portfolio .content-area .work-section .work-box-2 .project-tech {
+color: white;
+font-size: 22px;
+font-style: italic;
+position: absolute;
+top: 40%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+white-space: nowrap;
+font-family: 'Nunito', sans-serif;
+margin-top: 18px;
+}
+.portfolio .content-area .work-section .work-box-2 .project-link {
+background: #FF5F5E;
+-webkit-border-radius: 25px;
+-moz-border-radius: 25px;
+border-radius: 25px;
+text-align: center;
+padding: 20px;
+letter-spacing: 3px;
+text-transform: uppercase;
+color: #ffffff;
+text-decoration: none;
+display: inline-block;
+position: absolute;
+top: 56%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+white-space: nowrap;
+font-family: 'Nunito', sans-serif;
+font-size: 30px;
+margin-top: 50px;
+}
+.portfolio .content-area .work-section .work-box-2 .project-link:hover {
+cursor:pointer;
+background:darkgrey;
+}
+.portfolio .content-area .scroll-section .work-section .work-box-2 img{
+width: 274px;
+margin-left: 39px;
+margin-top: -22px;
+height: 212px;
+margin-bottom: 50px;
+border:1px solid lightgrey;
+}
+  /* WORK BOX-3 */
+  .portfolio .content-area .work-section .work-box-3 .overlay {
+    position: absolute;
+    bottom: 1px;
+    left: 39px;
+    right: 0;
+    background-color: grey;
+    overflow: hidden;
+    width: 0px;
+    height: 211px;
+    transition: .6s ease;
   }
-  .portfolio .content-area .work-section .work-box-1 .overlay .project-info,
-  .work-box-2 .overlay .project-info,
-  .work-box-3 .overlay .project-info{
-    display: none;
+  .portfolio .content-area .work-section .work-box-3:hover .overlay {
+    width: 274px;
+    opacity: .9;
+    height:211px;
+    background: #02CCBA;
   }
-  .portfolio .content-area .scroll-section .work-section .work-box-1 img{
-    width: 128%;
-    margin-left: -31px;
-    margin-top: -60px;
-    height: 212px;
-    margin-bottom: 50px;
-    border:1px solid lightgrey;
+  .portfolio .content-area .work-section .work-box-3 .text {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 11%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
   }
-  .portfolio .content-area .scroll-section .work-section .work-box-2 img{
-    width: 270px;
-    margin-left: 39px;
-    margin-top: -22px;
-    height: 212px;
-    margin-bottom: 50px;
-    border:1px solid lightgrey;
+  .portfolio .content-area .work-section .work-box-3 .project-tech {
+    color: white;
+    font-size: 22px;
+    font-style: italic;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 18px;
+  }
+  .portfolio .content-area .work-section .work-box-3 .project-link {
+    background: #FF5F5E;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    margin-top: 50px;
+  }
+  .portfolio .content-area .work-section .work-box-3 .project-link:hover {
+    cursor:pointer;
+    background:darkgrey;
   }
   .portfolio .content-area .scroll-section .work-section .work-box-3 img{
     width: 270px;
@@ -686,7 +1049,7 @@ html {
     margin-left: 0px;
     width: 100%;
     margin-top: -3px;
-    height: 646px;
+    height: 100%;
   }
   .portfolio .content-area .scroll-section .title h1 {
     font-size: 30px;
@@ -702,31 +1065,239 @@ html {
     margin-left: 50px;
     width: 210px;
   }
-  .portfolio .content-area .work-section .work-box-1 .overlay,
-  .work-box-2 .overlay,
-  .work-box-3 .overlay {
-    display: none;
+  /* WORK BOX-1 */
+.portfolio .content-area .work-section .work-box-1 .overlay {
+position: absolute;
+  bottom: 1px;
+  left: -31px;
+  right: 0;
+  background-color: grey;
+  overflow: hidden;
+  width: 0px;
+  height: 211px;
+  transition: .6s ease;
+}
+.portfolio .content-area .work-section .work-box-1:hover .overlay {
+width: 274px;
+opacity: .9;
+height:211px;
+background: #02CCBA;
+}
+.portfolio .content-area .work-section .work-box-1 .text {
+color: white;
+font-size: 40px;
+position: absolute;
+top: 11%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+white-space: nowrap;
+font-family: 'Nunito', sans-serif;
+}
+.portfolio .content-area .work-section .work-box-1 .project-tech {
+color: white;
+font-size: 22px;
+font-style: italic;
+position: absolute;
+top: 20%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+white-space: nowrap;
+font-family: 'Nunito', sans-serif;
+margin-top: 18px;
+}
+.portfolio .content-area .work-section .work-box-1 .project-link {
+background: #FF5F5E;
+-webkit-border-radius: 25px;
+-moz-border-radius: 25px;
+border-radius: 25px;
+text-align: center;
+padding: 20px;
+letter-spacing: 3px;
+text-transform: uppercase;
+color: #ffffff;
+text-decoration: none;
+display: inline-block;
+position: absolute;
+top: 56%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+white-space: nowrap;
+font-family: 'Nunito', sans-serif;
+font-size: 30px;
+margin-top: 50px;
+}
+.portfolio .content-area .work-section .work-box-1 .project-link:hover {
+cursor:pointer;
+background:darkgrey;
+}
+.portfolio .content-area .scroll-section .work-section .work-box-1 img{
+width: 274px;
+margin-left: -31px;
+margin-top: -60px;
+height: 212px;
+margin-bottom: 50px;
+border:1px solid lightgrey;
+}
+  /* WORK BOX-2  */
+.portfolio .content-area .work-section .work-box-2 .overlay {
+position: absolute;
+bottom: 1px;
+left: 39px;
+right: 0;
+background-color: grey;
+overflow: hidden;
+width: 0px;
+height: 211px;
+transition: .6s ease;
+}
+.portfolio .content-area .work-section .work-box-2:hover .overlay {
+width: 274px;
+opacity: .9;
+height:211px;
+background: #02CCBA;
+}
+.portfolio .content-area .work-section .work-box-2 .text {
+color: white;
+font-size: 40px;
+position: absolute;
+top: 20%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+white-space: nowrap;
+font-family: 'Nunito', sans-serif;
+}
+.portfolio .content-area .work-section .work-box-2 .text .website {
+width:50px;
+display: block;
+margin-left: 38px;
+}
+.portfolio .content-area .work-section .work-box-2 .project-tech {
+color: white;
+font-size: 22px;
+font-style: italic;
+position: absolute;
+top: 40%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+white-space: nowrap;
+font-family: 'Nunito', sans-serif;
+margin-top: 18px;
+}
+.portfolio .content-area .work-section .work-box-2 .project-link {
+background: #FF5F5E;
+-webkit-border-radius: 25px;
+-moz-border-radius: 25px;
+border-radius: 25px;
+text-align: center;
+padding: 20px;
+letter-spacing: 3px;
+text-transform: uppercase;
+color: #ffffff;
+text-decoration: none;
+display: inline-block;
+position: absolute;
+top: 56%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+white-space: nowrap;
+font-family: 'Nunito', sans-serif;
+font-size: 30px;
+margin-top: 50px;
+}
+.portfolio .content-area .work-section .work-box-2 .project-link:hover {
+cursor:pointer;
+background:darkgrey;
+}
+.portfolio .content-area .scroll-section .work-section .work-box-2 img{
+width: 274px;
+margin-left: 39px;
+margin-top: -22px;
+height: 212px;
+margin-bottom: 50px;
+border:1px solid lightgrey;
+}
+  /* WORK BOX-3 */
+  .portfolio .content-area .work-section .work-box-3 .overlay {
+    position: absolute;
+    bottom: 1px;
+    left: 39px;
+    right: 0;
+    background-color: grey;
+    overflow: hidden;
+    width: 0px;
+    height: 211px;
+    transition: .6s ease;
   }
-  .portfolio .content-area .work-section .work-box-1 .overlay .project-info,
-  .work-box-2 .overlay .project-info,
-  .work-box-3 .overlay .project-info{
-    display: none;
+  .portfolio .content-area .work-section .work-box-3:hover .overlay {
+    width: 274px;
+    opacity: .9;
+    height:211px;
+    background: #02CCBA;
   }
-  .portfolio .content-area .scroll-section .work-section .work-box-1 img{
-    width: 270px;
-    margin-left: -30px;
-    margin-top: -60px;
-    height: 212px;
-    margin-bottom: 50px;
-    border:1px solid lightgrey;
+  .portfolio .content-area .work-section .work-box-3 .text {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 11%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
   }
-  .portfolio .content-area .scroll-section .work-section .work-box-2 img{
-    width: 270px;
-    margin-left: 39px;
-    margin-top: -22px;
-    height: 212px;
-    margin-bottom: 50px;
-    border:1px solid lightgrey;
+  .portfolio .content-area .work-section .work-box-3 .project-tech {
+    color: white;
+    font-size: 22px;
+    font-style: italic;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 18px;
+  }
+  .portfolio .content-area .work-section .work-box-3 .project-link {
+    background: #FF5F5E;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    margin-top: 50px;
+  }
+  .portfolio .content-area .work-section .work-box-3 .project-link:hover {
+    cursor:pointer;
+    background:darkgrey;
   }
   .portfolio .content-area .scroll-section .work-section .work-box-3 img{
     width: 270px;

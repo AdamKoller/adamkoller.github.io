@@ -91,3 +91,22 @@ body {
   padding: 0 0 0 46px;
   height: 372px;
 }
+.work-2 {
+  padding-top: 40px;
+}
+.work-2 .project-3 {
+  width: 50%;
+}
+.work-2 .project-3 img{
+  width: 80%;
+  padding: 0 0 0 88px;
+  height: 372px;
+}
+.work-2 .project-4 {
+  width: 50%;
+}
+.work-2 .project-4 img{
+  width: 80%;
+  padding: 0 0 0 46px;
+  height: 372px;
+}

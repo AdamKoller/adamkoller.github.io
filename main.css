@@ -10,23 +10,22 @@
 }
 .header .name {
   font-size: 50px;
-  padding: 55px 0px 20px 0px;
+  padding: 55px 0px 10px 0px;
+  font-weight: 600;
 }
 .header .title {
   color:#02CCBA;
   font-size: 36px;
-  font-weight: lighter;
+  font-weight: 300;
   padding-bottom: 35px;
 }
 .header .quote {
   font-size: 20px;
-  font-weight: lighter;
-  padding-bottom: 55px;
+  font-weight: 200;
+  padding-bottom: 25px;
   font-style: italic;
 }
-/* .header .hello {
-  font-size: 20px;
-  font-weight: lighter;
-  padding: 60px 140px 60px 0px;
-  line-height: 2;
-} */
+.header .socials {
+  font-size: 30px;
+  padding-bottom: 10px;
+}

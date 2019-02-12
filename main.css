@@ -1,5 +1,12 @@
+/* colors
+turqoise: #02CCBA
+black: #212121
+grey: #333333
+offwhite:#C9CCC9
+*/
+
 body {
-  background: #333333;
+  background: #C9CCC9;
 }
 /* header */
 .header {
@@ -36,11 +43,51 @@ body {
 }
 /* about */
 .about {
-  color: white;
+  color: #333333;
   padding: 55px 400px;
   font-family: 'Nunito', sans-serif;
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: 2px;
-  max-width: 75%;
+}
+.about h3 {
+  font-size: 36px;
+  text-transform: uppercase;
+  padding-bottom: 25px;
+  color: #212121;
+  letter-spacing: 2px;
+}
+.about .me {
+  color: #02CCBA;
+}
+.about p {
+  width:100%;
+}
+/* projects */
+.work h3 {
+  font-size: 36px;
+  text-transform: uppercase;
+  padding-bottom: 44px;
+  color: #212121;
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 2px;
+}
+.work .projects {
+  color: #02CCBA;
+}
+.work .project-1 {
+  width: 50%;
+}
+.work .project-1 img{
+  width: 80%;
+  padding: 0 0 0 88px;
+  height: 372px;
+}
+.work .project-2 {
+  width: 50%;
+}
+.work .project-2 img{
+  width: 80%;
+  padding: 0 0 0 46px;
+  height: 372px;
 }

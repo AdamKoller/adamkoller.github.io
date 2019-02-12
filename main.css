@@ -1,3 +1,7 @@
+body {
+  background: #333333;
+}
+/* header */
 .header {
   background:url('background2.jpg') center center;
   -webkit-background-size: cover;
@@ -7,6 +11,7 @@
   color: white;
   text-align: center;
   font-family: 'Nunito', sans-serif;
+  position: static;
 }
 .header .name {
   font-size: 50px;
@@ -28,4 +33,14 @@
 .header .socials {
   font-size: 30px;
   padding-bottom: 10px;
+}
+/* about */
+.about {
+  color: white;
+  padding: 55px 400px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  max-width: 75%;
 }

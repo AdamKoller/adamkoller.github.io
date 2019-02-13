@@ -77,6 +77,61 @@ body {
 }
 .work .project-1 {
   width: 50%;
+  position: relative;
+}
+.work .project-1 .overlay {
+  position: absolute;
+  bottom: 3px;
+  left: 87px;
+  right: 0;
+  background-color: grey;
+  overflow: hidden;
+  width: 514px;
+  height: 372px;
+  transition: .6s ease;
+  opacity: 0;
+}
+.work .project-1:hover .overlay {
+  width: 514px;
+  opacity: .8;
+  height:372px;
+  background:#333333 ;
+}
+.work .project-1 .text {
+  font-size: 40px;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+.work .project-1 .project-tech {
+  font-size: 25px;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+}
+.work .project-1 .project-link {
+  background: #FF5F5E;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 26px;
+  margin-left: 190px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  position: absolute;
+  font-family: 'Nunito', sans-serif;
+}
+.work .project-1 .project-link:hover {
+  background: #02CCBA;
+  cursor: pointer;
+  transition: .3s ease-in-out;
 }
 .work .project-1 img{
   width: 80%;

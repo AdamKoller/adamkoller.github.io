@@ -82,17 +82,17 @@ body {
 .work .project-1 .overlay {
   position: absolute;
   bottom: 3px;
-  left: 87px;
+  left: 88px;
   right: 0;
   background-color: grey;
   overflow: hidden;
-  width: 514px;
+  width: 80%;
   height: 372px;
   transition: .6s ease;
   opacity: 0;
 }
 .work .project-1:hover .overlay {
-  width: 514px;
+  width: 80%;
   opacity: .8;
   height:372px;
   background:#333333 ;
@@ -149,13 +149,13 @@ body {
   right: 0;
   background-color: grey;
   overflow: hidden;
-  width: 514px;
+  width: 80%;
   height: 372px;
   transition: .6s ease;
   opacity: 0;
 }
 .work .project-2:hover .overlay {
-  width: 514px;
+  width: 80%;
   opacity: .8;
   height:372px;
   background:#333333 ;
@@ -215,13 +215,13 @@ body {
   right: 0;
   background-color: grey;
   overflow: hidden;
-  width: 514px;
+  width: 80%;
   height: 372px;
   transition: .6s ease;
   opacity: 0;
 }
 .work-2 .project-3:hover .overlay {
-  width: 514px;
+  width: 80%;
   opacity: .8;
   height:372px;
   background:#333333 ;
@@ -278,13 +278,13 @@ body {
   right: 0;
   background-color: grey;
   overflow: hidden;
-  width: 514px;
+  width: 80%;
   height: 372px;
   transition: .6s ease;
   opacity: 0;
 }
 .work-2 .project-4:hover .overlay {
-  width: 514px;
+  width: 80%;
   opacity: .8;
   height:372px;
   background:#333333 ;

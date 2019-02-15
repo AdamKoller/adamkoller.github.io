@@ -111,22 +111,20 @@ body {
   font-family: 'Nunito', sans-serif;
   text-align: center;
 }
-.work .project-1 .project-link {
+.work .project-1 .project-link{
   background: #FF5F5E;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   border-radius: 25px;
-  text-align: center;
   padding: 20px;
   margin-top: 26px;
-  margin-left: 190px;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
   display: inline-block;
-  position: absolute;
   font-family: 'Nunito', sans-serif;
+  text-align: center;
 }
 .work .project-1 .project-link:hover {
   background: #02CCBA;
@@ -179,17 +177,15 @@ body {
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   border-radius: 25px;
-  text-align: center;
   padding: 20px;
   margin-top: 26px;
-  margin-left: 190px;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
   display: inline-block;
-  position: absolute;
   font-family: 'Nunito', sans-serif;
+  text-align: center;
 }
 .work .project-2 .project-link:hover {
   background: #02CCBA;
@@ -245,17 +241,15 @@ body {
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   border-radius: 25px;
-  text-align: center;
   padding: 20px;
   margin-top: 26px;
-  margin-left: 190px;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
   display: inline-block;
-  position: absolute;
   font-family: 'Nunito', sans-serif;
+  text-align: center;
 }
 .work-2 .project-3 .project-link:hover {
   background: #02CCBA;
@@ -308,17 +302,15 @@ body {
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   border-radius: 25px;
-  text-align: center;
   padding: 20px;
   margin-top: 26px;
-  margin-left: 190px;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
   display: inline-block;
-  position: absolute;
   font-family: 'Nunito', sans-serif;
+  text-align: center;
 }
 .work-2 .project-4 .project-link:hover {
   background: #02CCBA;
@@ -349,4 +341,12 @@ body {
   font-size: 20px;
   width: 100%;
   padding-bottom: 50px;
+}
+
+
+/* media queries */
+@media only screen and (max-width:600px) {
+  .about  {
+    padding:55px 100px;
+  }
 }

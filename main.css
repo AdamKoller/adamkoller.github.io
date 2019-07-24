@@ -38,8 +38,11 @@ body {
   font-style: italic;
 }
 .header .socials {
-  font-size: 30px;
+  font-size: 46px;
   padding-bottom: 10px;
+}
+.header .socials a {
+  padding: 0 20px 0 20px;
 }
 .header .socials:hover a{
   color: white;

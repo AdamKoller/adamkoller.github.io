@@ -10,7 +10,7 @@ body {
 }
 /* header */
 .header {
-  background:url('background2.jpg') center center;
+  background:url('img/background2.jpg') center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

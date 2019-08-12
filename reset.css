@@ -21,7 +21,9 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
+	text-align: center;
 	vertical-align: baseline;
+	font-family: 'Nunito', sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -30,6 +32,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	width: fit-content;
 }
 ol, ul {
 	list-style: none;

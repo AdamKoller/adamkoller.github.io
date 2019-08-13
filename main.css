@@ -234,6 +234,7 @@ html,body {
   .work .work-section-1,
   .work .work-section-2 {
     display: block;
+    padding: 0 10px;
   }
   .work .project-1 {
     text-align: center;

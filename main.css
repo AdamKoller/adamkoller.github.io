@@ -111,7 +111,7 @@ html,body {
   margin: 30px auto;
   color: white;
   position: relative;
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('./img/restuarant.png');
+  background-image: linear-gradient(rgba(67,67,84,0.7),rgba(67,67,85,0.7)),url('./img/restuarant.png');
 }
 .work .project-2 {
   text-align: center;
@@ -125,7 +125,7 @@ html,body {
   margin: 30px auto;
   color: white;
   position: relative;
-  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('./img/email.png');
+  background-image: linear-gradient(rgba(67,67,84,0.7),rgba(67,67,85,0.7)),url('./img/email.png');
 }
 .work .project-3 {
   text-align: center;
@@ -139,7 +139,7 @@ html,body {
   margin: 30px auto;
   color: white;
   position: relative;
-  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('./img/netflix-1.png');
+  background-image: linear-gradient(rgba(67,67,84,0.7),rgba(67,67,85,0.7)),url('./img/netflix-1.png');
 }
 .work .project-4 {
   text-align: center;
@@ -153,7 +153,7 @@ html,body {
   margin: 30px auto;
   color: white;
   position: relative;
-  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('./img/socialmedia.png');
+  background-image: linear-gradient(rgba(67,67,84,0.7),rgba(67,67,85,0.7)),url('./img/socialmedia.png');
 }
 .work .project-info .text {
   font-size: 40px;
@@ -161,7 +161,8 @@ html,body {
 }
 .work .project-info .project-tech {
   font-size: 30px;
-  color: #02CCBA;
+  font-style: italic;
+  color: white;
   padding-top: 14px;
   padding-bottom: 60px;
 }
@@ -183,6 +184,7 @@ html,body {
 }
 .work .project-info a:hover {
   background: grey;
+  transition: .2s ease-in-out;
 }
 .coming-soon {
   text-align: center;
@@ -248,7 +250,6 @@ html,body {
     margin: 30px auto;
     color: white;
     position: relative;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('./img/restuarant.png');
   }
   .work .project-2 {
     text-align: center;
@@ -262,7 +263,6 @@ html,body {
     margin: 30px auto;
     color: white;
     position: relative;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('./img/email.png');
   }
   .work .project-3 {
     text-align: center;
@@ -276,7 +276,6 @@ html,body {
     margin: 30px auto;
     color: white;
     position: relative;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('./img/netflix-1.png');
   }
   .work .project-4 {
     text-align: center;
@@ -290,7 +289,6 @@ html,body {
     margin: 30px auto;
     color: white;
     position: relative;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('./img/socialmedia.png');
   }
   .work .project-info .text {
     font-size: 30px;
@@ -298,7 +296,6 @@ html,body {
   }
   .work .project-info .project-tech {
     font-size: 24px;
-    color: #02CCBA;
     padding-bottom: 20px;
   }
   .work .project-info a {
@@ -371,7 +368,6 @@ html,body {
       margin: 30px auto;
       color: white;
       position: relative;
-      background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('./img/restuarant.png');
     }
     .work .project-2 {
       text-align: center;
@@ -385,7 +381,6 @@ html,body {
       margin: 30px auto;
       color: white;
       position: relative;
-      background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('./img/email.png');
     }
     .work .project-3 {
       text-align: center;
@@ -399,7 +394,6 @@ html,body {
       margin: 30px auto;
       color: white;
       position: relative;
-      background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('./img/netflix-1.png');
     }
     .work .project-4 {
       text-align: center;
@@ -413,7 +407,6 @@ html,body {
       margin: 30px auto;
       color: white;
       position: relative;
-      background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('./img/socialmedia.png');
     }
     .work .project-info .text {
       font-size: 30px;
@@ -421,7 +414,6 @@ html,body {
     }
     .work .project-info .project-tech {
       font-size: 30px;
-      color: #02CCBA;
       padding-top: 14px;
       padding-bottom: 20px;
     }

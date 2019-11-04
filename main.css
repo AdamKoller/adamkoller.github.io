@@ -111,7 +111,7 @@ html,body {
   margin: 30px auto;
   color: white;
   position: relative;
-  background-image: linear-gradient(rgba(67,67,84,0.7),rgba(67,67,85,0.7)),url('./img/restuarant.png');
+  background-image: linear-gradient(rgba(67,67,84,0.7),rgba(67,67,85,0.7)),url('./img/realestate.png');
 }
 .work .project-2 {
   text-align: center;
@@ -125,7 +125,7 @@ html,body {
   margin: 30px auto;
   color: white;
   position: relative;
-  background-image: linear-gradient(rgba(67,67,84,0.7),rgba(67,67,85,0.7)),url('./img/email.png');
+  background-image: linear-gradient(rgba(67,67,84,0.7),rgba(67,67,85,0.7)),url('./img/restaurant.png');
 }
 .work .project-3 {
   text-align: center;
@@ -139,7 +139,7 @@ html,body {
   margin: 30px auto;
   color: white;
   position: relative;
-  background-image: linear-gradient(rgba(67,67,84,0.7),rgba(67,67,85,0.7)),url('./img/netflix-1.png');
+  background-image: linear-gradient(rgba(67,67,84,0.7),rgba(67,67,85,0.7)),url('./img/email.png');
 }
 .work .project-4 {
   text-align: center;
@@ -153,7 +153,7 @@ html,body {
   margin: 30px auto;
   color: white;
   position: relative;
-  background-image: linear-gradient(rgba(67,67,84,0.7),rgba(67,67,85,0.7)),url('./img/socialmedia.png');
+  background-image: linear-gradient(rgba(67,67,84,0.7),rgba(67,67,85,0.7)),url('./img/netflix-1.png');
 }
 .work .project-info .text {
   font-size: 40px;
@@ -439,16 +439,52 @@ html,body {
   }
 
 /* DESKTOP */
-
 @media screen and (min-width:1200px) {
   .about {
     padding: 55px 350px;
+  }
+  .work .work-section-1,
+  .work .work-section-2 {
+    display: block;
+  }
+  .work .work-section-1 .project-1,
+  .work .work-section-1 .project-2,
+  .work .work-section-2 .project-3,
+  .work .work-section-2 .project-4 {
+    height:480px;
+    width: 880px;
+    margin-bottom: 70px;
+  }
+}
+@media screen and (min-width:1600px) {
+  .about {
+    padding: 55px 400px;
+  }
+  .work .work-section-1,
+  .work .work-section-2 {
+    display: flex;
   }
   .work .work-section-1 .project-1,
   .work .work-section-1 .project-2,
   .work .work-section-2 .project-3,
   .work .work-section-2 .project-4 {
     height:400px;
-    width: 550px;
+    width: 734px;
+  }
+}
+@media screen and (min-width:2000px) {
+  .about {
+    padding: 55px 600px;
+  }
+  .work .work-section-1,
+  .work .work-section-2 {
+    display: flex;
+  }
+  .work .work-section-1 .project-1,
+  .work .work-section-1 .project-2,
+  .work .work-section-2 .project-3,
+  .work .work-section-2 .project-4 {
+    height:450px;
+    width: 826px;
   }
 }

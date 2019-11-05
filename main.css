@@ -111,7 +111,7 @@ html,body {
   margin: 30px auto;
   color: white;
   position: relative;
-  background-image: linear-gradient(rgba(67,67,84,0.7),rgba(67,67,85,0.7)),url('./img/realestate.png');
+  background-image:url('./img/realestate.png');
 }
 .work .project-2 {
   text-align: center;
@@ -125,7 +125,7 @@ html,body {
   margin: 30px auto;
   color: white;
   position: relative;
-  background-image: linear-gradient(rgba(67,67,84,0.7),rgba(67,67,85,0.7)),url('./img/restaurant.png');
+  background-image: url('./img/restaurant.png');
 }
 .work .project-3 {
   text-align: center;
@@ -139,7 +139,7 @@ html,body {
   margin: 30px auto;
   color: white;
   position: relative;
-  background-image: linear-gradient(rgba(67,67,84,0.7),rgba(67,67,85,0.7)),url('./img/email.png');
+  background-image: url('./img/email.png');
 }
 .work .project-4 {
   text-align: center;
@@ -153,7 +153,29 @@ html,body {
   margin: 30px auto;
   color: white;
   position: relative;
-  background-image: linear-gradient(rgba(67,67,84,0.7),rgba(67,67,85,0.7)),url('./img/netflix-1.png');
+  background-image: url('./img/netflix-1.png');
+}
+.work .project-info {
+  height:380px;
+  width: 240px;
+  opacity: 0;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: rgb(2,204,187); /* Old browsers */
+  background: -moz-linear-gradient(left, rgba(64,64,64,.7) 0%, rgba(64,64,64,.7) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(64,64,64,.7) 0%,rgba(64,64,64,.7) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(64,64,64,.7) 0%,rgba(64,64,64,.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db3977', endColorstr='#ff5db1',GradientType=1 ); /* IE6-9 */
+}
+.work .work-section-1 .project-1:hover .project-info,
+.work .work-section-1 .project-2:hover .project-info,
+.work .work-section-2 .project-3:hover .project-info,
+.work .work-section-2 .project-4:hover .project-info {
+  opacity: 1;
+  transition: .3s ease-in-out;
 }
 .work .project-info .text {
   font-size: 40px;
@@ -183,7 +205,7 @@ html,body {
   text-align: center;
 }
 .work .project-info a:hover {
-  background: grey;
+  background: #02CCBA;
   transition: .2s ease-in-out;
 }
 .coming-soon {
@@ -238,45 +260,9 @@ html,body {
     display: block;
     padding: 0 10px;
   }
-  .work .project-1 {
-    text-align: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size:cover;
-    background-repeat: no-repeat;
-    width: 380px;
-    height: 240px;
-    margin: 30px auto;
-    color: white;
-    position: relative;
-  }
-  .work .project-2 {
-    text-align: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size:cover;
-    background-repeat: no-repeat;
-    width: 380px;
-    height: 240px;
-    margin: 30px auto;
-    color: white;
-    position: relative;
-  }
-  .work .project-3 {
-    text-align: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size:cover;
-    background-repeat: no-repeat;
-    width: 380px;
-    height: 240px;
-    margin: 30px auto;
-    color: white;
-    position: relative;
-  }
+  .work .project-1,
+  .work .project-2,
+  .work .project-3,
   .work .project-4 {
     text-align: center;
     -webkit-background-size: cover;
@@ -284,11 +270,15 @@ html,body {
     -o-background-size: cover;
     background-size:cover;
     background-repeat: no-repeat;
-    width: 380px;
-    height: 240px;
+    width: 480px;
+    height: 260px;
     margin: 30px auto;
     color: white;
     position: relative;
+  }
+  .work .project-info {
+    width: 480px;
+    height: 260px;
   }
   .work .project-info .text {
     font-size: 30px;
@@ -351,66 +341,31 @@ html,body {
     .about  {
       padding:55px 33px !important;
     }
-
     .work .work-section-1,
     .work .work-section-2 {
-      display: flex;
+      display: block;
     }
-    .work .project-1 {
-      text-align: center;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size:cover;
-      background-repeat: no-repeat;
-      width: 350px;
-      height: 240px;
-      margin: 30px auto;
-      color: white;
+    .work .work-section-1 .project-1,
+    .work .work-section-1 .project-2,
+    .work .work-section-2 .project-3,
+    .work .work-section-2 .project-4 {
+      height:406px;
+      width: 730px;
+      margin-bottom: 70px;
       position: relative;
     }
-    .work .project-2 {
-      text-align: center;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size:cover;
-      background-repeat: no-repeat;
-      width: 350px;
-      height: 240px;
-      margin: 30px auto;
-      color: white;
-      position: relative;
-    }
-    .work .project-3 {
-      text-align: center;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size:cover;
-      background-repeat: no-repeat;
-      width: 350px;
-      height: 240px;
-      margin: 30px auto;
-      color: white;
-      position: relative;
-    }
-    .work .project-4 {
-      text-align: center;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size:cover;
-      background-repeat: no-repeat;
-      width: 350px;
-      height: 240px;
-      margin: 30px auto;
-      color: white;
-      position: relative;
+    .work .project-info {
+      height:406px;
+      width: 730px;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
     }
     .work .project-info .text {
       font-size: 30px;
-      padding-top: 40px;
+      padding-top: 100px;
     }
     .work .project-info .project-tech {
       font-size: 30px;
@@ -454,6 +409,16 @@ html,body {
     height:480px;
     width: 880px;
     margin-bottom: 70px;
+    position: relative;
+  }
+  .work .project-info {
+    height:480px;
+    width: 880px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
   }
 }
 @media screen and (min-width:1600px) {
@@ -470,6 +435,16 @@ html,body {
   .work .work-section-2 .project-4 {
     height:400px;
     width: 734px;
+    position: relative;
+  }
+  .work .project-info {
+    height:400px;
+    width: 734px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
   }
 }
 @media screen and (min-width:2000px) {
@@ -486,5 +461,15 @@ html,body {
   .work .work-section-2 .project-4 {
     height:450px;
     width: 826px;
+    position: relative;
+  }
+  .work .project-info {
+    height:450px;
+    width: 826px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
   }
 }
